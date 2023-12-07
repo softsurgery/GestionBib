@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Ajouter Etudiant</title>
+    <title>Modifier Etudiant</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
         <fieldset>
             <legend>
-                <h1>Nouveau Etudiant</h1>
+                <h1>Modifier Etudiant</h1>
             </legend>
             <p>Veuillez remplir les champs suivants:</p>
             <table>
@@ -40,7 +40,7 @@
                 </tr>
             </table>
             <input type="reset" value="Annuler" />
-            <input type="submit" name="submit" value="Enregistrer" />
+            <input type="submit" name="submit" value="Modifier" />
         </fieldset>
     </form>
 </body>
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
     $adresse = $_POST['adresse'];
     $classe = $_POST['classe'];
     $e = new Etudiant($code, $nom, $prenom, $adresse, $classe);
-    $ok = $e->ajouter_etudiant();
+    $ok = $e->modifier_etudiant();
     if ($ok == FALSE)
         echo "<script>console.log('Problème d'insertion')</script>";
     else

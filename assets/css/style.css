@@ -1,0 +1,48 @@
+label,
+p,
+input {
+    font-size: 1.3em;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #0167cc;
+}
+
+form {
+    position: absolute;
+    width: 450px;
+    top: 2vh;
+}
+
+fieldset {
+    padding: 0 20px 0 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
